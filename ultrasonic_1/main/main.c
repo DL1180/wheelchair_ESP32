@@ -66,7 +66,7 @@ void app_main(void)
         if (distance < 0) {
             printf("No echo received\n");
         } else {
-            printf("Distance: %.2f cm\n", distance);
+            printf("DIST,%.2f\n", distance);
         }
         vTaskDelay(pdMS_TO_TICKS(500));
     }
